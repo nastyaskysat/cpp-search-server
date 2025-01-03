@@ -3,8 +3,6 @@
 #include <set>
 #include <string>
 
- using namespace std;
-
 vector<string> SplitIntoWords(const string& text);
  
 template <typename StringContainer>

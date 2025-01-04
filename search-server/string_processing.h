@@ -3,12 +3,12 @@
 #include <set>
 #include <string>
 
-vector<string> SplitIntoWords(const string& text);
+std::vector<std::string> SplitIntoWords(const std::string& text);
  
 template <typename StringContainer>
-set<string> MakeUniqueNonEmptyStrings(const StringContainer& strings) {
-    set<string> non_empty_strings;
-    for (const string& str : strings) {
+std::set<std::string> MakeUniqueNonEmptyStrings(const StringContainer& strings) {
+    std::set<std::string> non_empty_strings;
+    for (const std::string& str : strings) {
         if (!str.empty()) {
             non_empty_strings.insert(str);
         }
